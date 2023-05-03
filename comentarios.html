@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+    <title>E-Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+
+</head>
+
+<body>
+    
+    <nav class="mainnavbar">
+        <h1 class="shoptitle"><span class="redtitle">E</span>-<span class="bluetitle">shop</span></h1>
+        <ul class="ulmainnavbar">
+            <li class="navbar"><a class="amainnavbar" href="index.html">Inicio</a></li>
+            <li class="navbar"><a class="amainnavbar" href="#">Productos</a></li>
+            <li class="navbar"><a class="amainnavbar" href="#">Servicios</a></li>
+            <li class="navbar"><a class="amainnavbar" href="#finalsec">Contacto</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="divform cajacoment">
+        <h1 class="divcomtitle">Sección de comentarios</h1>
+
+        <form id="commentarioform">
+            <div class="formulariocomentario">
+                <label for="name">Nombre:</label> <br>
+                <input type="text" id="nombrre" name="nombrre" class="inputscomments" required>
+            </div>
+            <div class="formulariocommentario">
+                <label for="commentario">Comentario:</label> <br>
+                <textarea id="commentario" name="commentario"  class="inputscomments" required></textarea>
+            </div>
+            <div class="formulariocommentario">
+                <label for="fecha">Fecha y hora:</label> <br>
+                <input type="text" id="fechayhora" name="fechayhora"  class="inputscomments" readonly>
+            </div>
+            <div class="formulariocommentario">
+                <button type="submit" class="buttoncomm">Enviar comentario</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="cajacomentario">
+        <h3>Comentarios:</h3>
+        <div id="commentarios"></div>
+    </div>
+
+
+
+
+    <section class="final" id="finalsec">
+        <div class="finaldivs">
+            <h1 class="titlefinal"><span class="redtitle">E</span>-shop</h1>
+            <div class="snfinal">
+                <a href="https://facebook.com" class="face1"><i class="fab fa-facebook-square" id="finalico"></i></a>
+                <a href="https://instagram.com" class="insta1"><i class="fab fa-instagram-square" id="finalico"></i></a>
+                <a href="https://twitter.com" class="twitter1"><i class="fab fa-twitter-square" id="finalico"></i></a>
+            </div> <br>
+            <p class="finalcredits"> <br> Diseñado por: Luis Pérez</p>
+        </div>
+        <div class="finaldivs1">
+            <ul class="finalul1">
+                 <li class="finalp1">Shop</li>
+                     <a href="#" id="finallinks"><li class="finalp">Sobre nosotros</li></a>
+                     <a href="#" id="finallinks"><li class="finalp">Contacto</li></a>
+                     <a href="#" id="finallinks"><li class="finalp">Ubicación</li></a>
+                     <a href="#" id="finallinks"><li class="finalp">FAQ</li></a> 
+            </ul>
+        </div>
+
+        <div class="finaldivs2">
+            <ul class="finalul2">
+                <li class="finalp1">Links</li>
+                    <a href="#" id="finallinks"><li class="finalp">Electronicos</li></a>
+                    <a href="#" id="finallinks"><li class="finalp">Verano</li></a>
+                    <a href="#" id="finallinks"><li class="finalp">Libros</li></a>
+                    <a href="#" id="finallinks"><li class="finalp">Cosméticos</li></a>   
+            </ul>
+        </div>
+
+        <div class="finaldivs3">
+            <ul class="finalul3">
+                <li class="finalp1">Contacto</li>
+                    <a href="#" id="finallinks"><li class="finalp">+52 961 453 3787</li></a>
+                    <a href="#" id="finallinks"><li class="finalp">eshop@gmail.com</li></a>
+                    <a href="#" id="finallinks"><li class="finalp">123. Lan, London, UK</li></a>
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

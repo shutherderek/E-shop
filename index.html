@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="funciones.js"></script>
+    <title>E-Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <script src="https://kit.fontawesome.com/d2875ec451.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <nav class="mainnavbar">
+      <h1 class="shoptitle"><span class="redtitle">E</span>-<span class="bluetitle">shop</span></h1>
+      <ul class="ulmainnavbar">
+        <li class="navbar"><a class="amainnavbar" href="#">Inicio</a></li>
+        <li class="navbar"><a class="amainnavbar" href="#cajaproductosa">Productos</a></li>
+        <li class="navbar"><a class="amainnavbar" href="#">Servicios</a></li>
+        <li class="navbar"><a class="amainnavbar" href="#finalsec">Contacto</a></li> 
+      </ul>  
+    </nav>
+<br>
+    <nav class="secondmainnavbar">
+        <li class="buttonsnavbar"><input type="search" class="mainsearch"></li>
+        <li class="buttonsnavbar"><i class="fa-regular fa-heart"></i></li>
+        <li class="buttonsnavbar car"><i class="fa-solid fa-cart-shopping"></i> </li>
+            <div class="logocar" id="numerocarrito">0</div>
+        </li> 
+    </nav> 
+
+    <section class="header">
+        <div class="headercontainer">
+            <div class="hcboxes">
+                <h1 class="titleheader">Consigue los mejores<br>
+                productos en tu hogar
+                </h1>
+                <input type="search" class="searchheader" placeholder="Busca tu producto favorito" list="lista">
+
+            </div>
+
+            <datalist id="lista">
+                <option value="electronicos"></option>
+                <option value="cosmeticos"></option>
+                <option value="ropa"></option>
+                <option value="libros"></option>
+                <option value="accesorios"></option>
+                <option value="calzado"></option>
+            </datalist>
+
+            <div class="hcboxes1">
+                <img src="header.png" class="headerimg">
+            </div>
+
+
+            <div class="hcboxes2"> 
+               <a href="https://facebook.com" class="face"><i class="fab fa-facebook-square"></i></a>
+               <a href="https://instagram.com" class="insta"><i class="fab fa-instagram-square"></i></a>
+               <a href="https://twitter.com" class="twitter"><i class="fab fa-twitter-square"></i></a>
+                    <div class="divpr">
+                        <a href="#"><img src="header2.png" class="pruebaimg"></a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <nav class="productsnavbar">
+        <ul class="ulproductsbar">
+            <div class="productsbar electro">Electrónicos</div>
+            <li class="productsbar cos">Cosméticos</li>
+            <li class="productsbar rop">Ropa</li>
+            <li class="productsbar lib">Libros</li>
+            <li class="productsbar acc">Accesorios</li>
+            <li class="productsbar cal">Calzado</li>
+            <li class="productsbar all"><span class="producttitle">Ver todo</span></li>
+        
+     
+             <div class="subproductsbar">
+                 <li class="icoproductsbar">←</li>
+                 <li class="icoproductsbar">→</li> 
+            </div>
+        </ul>
+    </nav>
+
+    <section class="productscontainer" id="cajaproductosa">
+        <div class="divproducts electronicos">
+            <div class="subdivproducts"><img class="fotos" src="img/audifonos.png"></div>
+                <div class="subdivproducts1 ">Audifonos
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div> 
+        </div>
+
+        <div class="divproducts electronicos">
+            <div class="subdivproducts"><img class="fotos" src="img/telefonos.png"></div>
+                <div class="subdivproducts1">Telefonos
+                    <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="divproducts electronicos">
+            <div class="subdivproducts"> <img class="fotos" src="img/usb1.png"></div>
+                <div class="subdivproducts1 ">USB
+                 <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="divproducts cosmeticos">
+            <div class="subdivproducts"><img src="img/labial.png" class="fotos"></div>
+                <div class="subdivproducts1 ">Maquillaje
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="divproducts cosmeticos">
+            <div class="subdivproducts"><img src="img/maquillaje.png" class="fotos"></div>
+                <div class="subdivproducts1 ">Labial
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="divproducts cosmeticos">
+            <div class="subdivproducts"><img src="img/shampo.png" class="fotos"></div>
+                <div class="subdivproducts1 ">Shampo
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>  
+        </div>
+
+        <div class="divproducts ropa">
+            <div class="subdivproducts"><img src="img/playeras.png" class="fotos"></div>
+                <div class="subdivproducts1 ">Playera
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="divproducts ropa">
+            <div class="subdivproducts"><img src="img/sueters.png" class="fotos"></div>
+                <div class="subdivproducts1 ">Sueters
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="divproducts ropa">
+            <div class="subdivproducts"><img src="img/pantalones.png" class="fotos"></div>
+                <div class="subdivproducts1 ">Pantalones
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+            
+        </div>
+
+        <div class="divproducts libros">
+            <div class="subdivproducts"><img src="img/entretenimiento.jpg" class="fotos"></div>
+                <div class="subdivproducts1 ">Entretenimiento
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="divproducts libros">
+            <div class="subdivproducts"><img src="img/comedia.png" class="fotos"></div>
+                <div class="subdivproducts1 ">Comedia
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="divproducts libros">
+            <div class="subdivproducts"><img src="img/accion.jpg" class="fotos"></div>
+                <div class="subdivproducts1 ">Accion
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+            
+        </div>
+
+        <div class="divproducts accesorios">
+            <div class="subdivproducts"><img src="img/collar.png" class="fotos"></div>
+                <div class="subdivproducts1 ">Collar
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="divproducts accesorios">
+            <div class="subdivproducts"><img src="img/aretes.png" class="fotos"></div>
+                <div class="subdivproducts1 ">Aretes
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="divproducts accesorios">
+            <div class="subdivproducts"><img src="img/anillos.png" class="fotos"></div>
+                <div class="subdivproducts1 ">Anillos
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+            
+        </div>
+
+        <div class="divproducts calzado">
+            <div class="subdivproducts"><img src="img/zapatos.png" class="fotos"></div>
+                <div class="subdivproducts1 ">Zapatos
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="divproducts calzado">
+            <div class="subdivproducts"><img src="img/tenis.png" class="fotos"></div>
+                <div class="subdivproducts1 ">Tenis
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+        </div>
+
+        <div class="divproducts calzado">
+            <div class="subdivproducts"><img src="img/chanclas.png" class="fotos"></div>
+                <div class="subdivproducts1 ">Chanclas
+                     <div class="preagre">
+                        <div class="precio"><p>$199.99</p></div>
+                        <div class="agregar">Agregar</div>
+                    </div>
+                </div>
+            
+        </div>
+
+    </section>
+
+
+    <!-- <section class="finalproduct">
+        <div class="divfinalproduct">
+            <div class="subdivfinal"></div>
+            <div class="subdivfinal1"></div>
+        </div>
+    </section> -->
+
+
+    <section class="final" id="finalsec">
+        <div class="finaldivs">
+            <h1 class="titlefinal"><span class="redtitle">E</span>-shop</h1>
+            <div class="snfinal">
+                <a href="https://facebook.com" class="face1"><i class="fab fa-facebook-square" id="finalico"></i></a>
+                <a href="https://instagram.com" class="insta1"><i class="fab fa-instagram-square" id="finalico"></i></a>
+                <a href="https://twitter.com" class="twitter1"><i class="fab fa-twitter-square" id="finalico"></i></a>
+            </div> <br>
+            <p class="finalcredits"> <a href="comentarios.html">¡Comparte tu opinión!</a> <br> Diseñado por: Luis Pérez</p>
+        </div>
+        <div class="finaldivs1">
+            <ul class="finalul1">
+                 <li class="finalp1">Shop</li>
+                     <a href="#" id="finallinks"><li class="finalp">Sobre nosotros</li></a>
+                     <a href="#" id="finallinks"><li class="finalp">Contacto</li></a>
+                     <a href="#" id="finallinks"><li class="finalp">Ubicación</li></a>
+                     <a href="#" id="finallinks"><li class="finalp">FAQ</li></a> 
+            </ul>
+        </div>
+
+        <div class="finaldivs2">
+            <ul class="finalul2">
+                <li class="finalp1">Links</li>
+                    <a href="#" id="finallinks"><li class="finalp">Electronicos</li></a>
+                    <a href="#" id="finallinks"><li class="finalp">Verano</li></a>
+                    <a href="#" id="finallinks"><li class="finalp">Libros</li></a>
+                    <a href="#" id="finallinks"><li class="finalp">Cosméticos</li></a>   
+            </ul>
+        </div>
+
+        <div class="finaldivs3">
+            <ul class="finalul3">
+                <li class="finalp1">Contacto</li>
+                    <a href="#" id="finallinks"><li class="finalp">+52 961 453 3787</li></a>
+                    <a href="#" id="finallinks"><li class="finalp">eshop@gmail.com</li></a>
+                    <a href="#" id="finallinks"><li class="finalp">123. Lan, London, UK</li></a>
+            </ul>
+        </div>
+    </section>
+
+  </body>
+</html>
