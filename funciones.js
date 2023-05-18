@@ -2,7 +2,7 @@ $(document).ready(function()
 { 
 	$(".electro").on("click",function()
 	{
-		//alert("hola");
+		
 		$(".electronicos").show(400);
 		$(".cosmeticos").hide(400);
 		$(".calzado").hide(400);
@@ -13,7 +13,7 @@ $(document).ready(function()
 
 	$(".cos").on("click",function()
 	{
-		//alert("hola");
+	
 		$(".cosmeticos").show(500);
 		$(".electronicos").hide(400);
 		$(".calzado").hide(400);
@@ -152,5 +152,71 @@ $(document).ready(function()
 		  $('#commentarios').prepend(newComment);
 		  $('#commentarioform')[0].reset();
 		});
+
+
+//titulo de categoria cambiante//
+	  	$(".productsbar").on("click",function()
+	{
+
+		$(".electro").show()
+		var electronicos=$(this).text();
+
+		$(".titulom").text(electronicos);
+	});	
+
+	  	  	$(".productsbar2").on("click",function()
+	{
+
+		$(".all").show()
+
+		$(".titulom").text("");
+	});	
+
+//Final de titulo cambiante//
+
+//inicio de funciones de registro//
+
+//inicio input cambiante password//
+$(".toggle-btn").click(function(){
+
+	var passwordInput = $("#password");
+
+	if (passwordInput.attr("type")=== "password" ) {
+		passwordInput.attr("type","text");	
+	} else {
+		passwordInput.attr("type","password");	
+	}
+});
+
+//Final input cambiante password//
+
+//inicio de cambio inicio/registro//
+
+$("#login-form-link").click(function(e) {
+		$("#register-formm").animate({ opacity: "hide" }, "fast", function() {
+		  $("#login-formm").animate({ opacity: "show" }, "slow");
+		});
+		e.preventDefault();
+	  });
+	
+	  $("#register-form-link").click(function(e) {
+		$("#login-formm").animate({ opacity: "hide" }, "fast", function() {
+		  $("#register-formm").animate({ opacity: "show" }, "slow");
+		});
+		e.preventDefault();
+	  });
 	  
+		$("#login-formm").submit(function(e) {
+		  // Realizar acciones de inicio de sesión aquí
+		  e.preventDefault();
+		});
+	  
+		$("#register-formm").submit(function(e) {
+		  // Realizar acciones de registro aquí
+		  e.preventDefault();
+	  });
+
+//Final de cambio inicio/registro//
+
+
 });
