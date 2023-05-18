@@ -227,6 +227,11 @@ i {
  cursor: pointer;
 }
 
+.productsbar2 {
+ position: relative;
+ cursor: pointer;
+}
+
 .ulproductsbar {
   position: relative;
 }
@@ -610,3 +615,62 @@ i {
   bottom: 25px;
   margin-left: 5px;
 }
+
+.ben
+{
+   position: absolute;
+  left: 500px;
+  
+}
+
+/*Inicio de estilo de registro*/
+
+
+/*segundo registro*/
+
+/*Inicio de sesión*/
+.loginopcs {
+  text-decoration: none;
+  color: #29487D;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 100px;
+  text-align: center;
+}
+
+.login-formmm {
+  display: none;
+}
+
+.logintitle {
+  text-align: center;
+}
+
+.inputslogin {
+  width: 94%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.buttonlogin, .regisbutton {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF60;
+  color: #fff;
+  border: none;
+  transition: 0.3s;
+}
+
+.buttonlogin:hover, .regisbutton:hover {
+  background-color: #45a040;
+  cursor: pointer;
+}
+
+  
+}
+
+/*Final de estilo registro*/
+
