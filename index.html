@@ -16,7 +16,11 @@
 
   <body>
     <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v16.0&appId=629490878728682&autoLogAppEvents=1" nonce="BkGgSlcb"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v16.0" nonce="fHC2c7ku"></script>
+
+
+
+
     <nav class="mainnavbar">
       <h1 class="shoptitle"><span class="redtitle">E</span>-<span class="bluetitle">shop</span></h1>
       <ul class="ulmainnavbar">
@@ -24,17 +28,26 @@
         <li class="navbar"><a class="amainnavbar" href="#cajaproductosa">Productos</a></li>
         <li class="navbar"><a class="amainnavbar" href="#">Servicios</a></li>
         <li class="navbar"><a class="amainnavbar" href="#finalsec">Contacto</a></li> 
-        <li class="navbar"><a class="amainnavbar" href="registro.html">Iniciar sesion</a></li>
+        <li class="navbar"><a class="amainnavbar" href="registro1.html">Iniciar sesion</a></li>
       </ul>  
     </nav>
 <br>
     <nav class="secondmainnavbar">
-        <li class="buttonsnavbar"><input type="search" class="mainsearch"></li>
         <li class="buttonsnavbar"><i class="fa-regular fa-heart"></i></li>
-        <li class="buttonsnavbar car"><i class="fa-solid fa-cart-shopping"></i> </li>
+        <li class="buttonsnavbar car">
+            <div class="panel">
+                <div class="panel-icon">
+                    <i class="fa-solid fa-cart-shopping"></i> <!-- Reemplaza con el icono que desees utilizar -->
+                </div>
+                <div class="panel-content">
+                  <!-- Contenido del panel -->
+                  <div class="totalprice"></div>
+                </div>
+              </div></li>
             <div class="logocar" id="numerocarrito">0</div>
         </li> 
     </nav> 
+      
 
     <section class="header">
         <div class="headercontainer">
@@ -73,7 +86,6 @@
     </section>
 
     <nav class="productsnavbar"> 
-               <h1 class="ben"><br>Bienvenidos a <span class="titulom"></span></h1>
         <ul class="ulproductsbar">
             <div class="productsbar electro">Electrónicos</div>
             <li class="productsbar cos">Cosméticos </li>
@@ -93,195 +105,190 @@
 
     <section class="productscontainer" id="cajaproductosa">
         <div class="divproducts electronicos">
-            <div class="subdivproducts"><img class="fotos" src="s.png"></div>
-                <div class="subdivproducts1 ">Switch
+            <div class="subdivproducts"><img class="fotos" src="img/s.png"></div>
+                <div class="subdivproducts1 "><p class="nombres">Switch</p>
                      <div class="preagre">
-                        <div class="precio"><p>$9,999.00</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$9999.00</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div> 
         </div>
 
         <div class="divproducts electronicos">
-            <div class="subdivproducts"><img class="fotos" src="g.jpg"></div>
-                <div class="subdivproducts1">Galaxy
+            <div class="subdivproducts"><img class="fotos" src="img/g.jpg"></div>
+                <div class="subdivproducts1"><p class="nombres">Galaxy</p>
                     <div class="preagre">
-                        <div class="precio"><p>$7,999.00</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$7999.00</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
         </div>
 
         <div class="divproducts electronicos">
-            <div class="subdivproducts"> <img class="fotos" src="j.jpg"></div>
-                <div class="subdivproducts1 ">Jetta
+            <div class="subdivproducts"> <img class="fotos" src="img/j.jpg"></div>
+                <div class="subdivproducts1"><p class="nombres">Jetta</p>
                  <div class="preagre">
-                        <div class="precio"><p>$100000</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$100000</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
         </div>
 
         <div class="divproducts cosmeticos">
-            <div class="subdivproducts"><img src="maquillaje.png" class="fotos"></div>
-                <div class="subdivproducts1 ">Maquillaje
+            <div class="subdivproducts"><img src="img/maquillaje.png" class="fotos"></div>
+                <div class="subdivproducts1"><p class="nombres">Maquillaje</p>
                      <div class="preagre">
-                        <div class="precio"><p>$199.99</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$199.99</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
         </div>
 
         <div class="divproducts cosmeticos">
-            <div class="subdivproducts"><img src="labial.png" class="fotos"></div>
-                <div class="subdivproducts1 ">Labial
+            <div class="subdivproducts"><img src="img/labial.png" class="fotos"></div>
+                <div class="subdivproducts1"><p class="nombres">Labial</p>
                      <div class="preagre">
-                        <div class="precio"><p>$199.99</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$199.99</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
         </div>
 
         <div class="divproducts cosmeticos">
-            <div class="subdivproducts"><img src="shampo.png" class="fotos"></div>
-                <div class="subdivproducts1 ">Shampo
+            <div class="subdivproducts"><img src="img/shampo.png" class="fotos"></div>
+                <div class="subdivproducts1"><p class="nombres">Shampo</p>
                      <div class="preagre">
-                        <div class="precio"><p>$199.99</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$199.99</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>  
         </div>
 
         <div class="divproducts ropa">
-            <div class="subdivproducts"><img src="playeras.png" class="fotos"></div>
-                <div class="subdivproducts1 ">Playera
+            <div class="subdivproducts"><img src="img/playeras.png" class="fotos"></div>
+                <div class="subdivproducts1"><p class="nombres"> Playera</p>
                      <div class="preagre">
-                        <div class="precio"><p>$199.99</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$199.99</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
         </div>
 
         <div class="divproducts ropa">
-            <div class="subdivproducts"><img src="sueters.png" class="fotos"></div>
-                <div class="subdivproducts1 ">Sueters
+            <div class="subdivproducts"><img src="img/sueters.png" class="fotos"></div>
+                <div class="subdivproducts1"><p class="nombres"> Sueters</p>
                      <div class="preagre">
-                        <div class="precio"><p>$199.99</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$199.99</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
         </div>
 
         <div class="divproducts ropa">
-            <div class="subdivproducts"><img src="pantalones.png" class="fotos"></div>
-                <div class="subdivproducts1 ">Pantalones
+            <div class="subdivproducts"><img src="img/pantalones.png" class="fotos"></div>
+                <div class="subdivproducts1"><p class="nombres">Pantalones</p>
                      <div class="preagre">
-                        <div class="precio"><p>$199.99</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$199.99</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
             
         </div>
 
         <div class="divproducts libros">
-            <div class="subdivproducts"><img src="entretenimiento.jpg" class="fotos"></div>
-                <div class="subdivproducts1 ">Entretenimiento
+            <div class="subdivproducts"><img src="img/entretenimiento.jpg" class="fotos"></div>
+                <div class="subdivproducts1"><p class="nombres">Entretenimiento</p>
                      <div class="preagre">
-                        <div class="precio"><p>$199.99</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$199.99</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
         </div>
 
         <div class="divproducts libros">
-            <div class="subdivproducts"><img src="comedia.png" class="fotos"></div>
-                <div class="subdivproducts1 ">Comedia
+            <div class="subdivproducts"><img src="img/comedia.png" class="fotos"></div>
+                <div class="subdivproducts1"><p class="nombres">Comedia</p>
                      <div class="preagre">
-                        <div class="precio"><p>$199.99</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$199.99</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
         </div>
 
         <div class="divproducts libros">
-            <div class="subdivproducts"><img src="accion.jpg" class="fotos"></div>
-                <div class="subdivproducts1 ">Accion
+            <div class="subdivproducts"><img src="img/accion.jpg" class="fotos"></div>
+                <div class="subdivproducts1"><p class="nombres">Accion</p>
                      <div class="preagre">
-                        <div class="precio"><p>$199.99</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$199.99</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
             
         </div>
 
         <div class="divproducts accesorios">
-            <div class="subdivproducts"><img src="collar.png" class="fotos"></div>
-                <div class="subdivproducts1 ">Collar
+            <div class="subdivproducts"><img src="img/collar.png" class="fotos"></div>
+                <div class="subdivproducts1"><p class="nombres">Collar</p>
                      <div class="preagre">
-                        <div class="precio"><p>$199.99</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$199.99</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
         </div>
 
         <div class="divproducts accesorios">
-            <div class="subdivproducts"><img src="aretes.png" class="fotos"></div>
-                <div class="subdivproducts1 ">Aretes
+            <div class="subdivproducts"><img src="img/aretes.png" class="fotos"></div>
+                <div class="subdivproducts1"><p class="nombres">Aretes</p>
                      <div class="preagre">
-                        <div class="precio"><p>$199.99</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$199.99</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
         </div>
 
         <div class="divproducts accesorios">
-            <div class="subdivproducts"><img src="anillos.png" class="fotos"></div>
-                <div class="subdivproducts1 ">Anillos
+            <div class="subdivproducts"><img src="img/anillos.png" class="fotos"></div>
+                <div class="subdivproducts1"><p class="nombres">Anillos</p>
                      <div class="preagre">
-                        <div class="precio"><p>$199.99</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$199.99</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
             
         </div>
 
         <div class="divproducts calzado">
-            <div class="subdivproducts"><img src="zapatos.png" class="fotos"></div>
-                <div class="subdivproducts1 ">Zapatos
+            <div class="subdivproducts"><img src="img/zapatos.png" class="fotos"></div>
+                <div class="subdivproducts1"><p class="nombres">Zapatos</p>
                      <div class="preagre">
-                        <div class="precio"><p>$199.99</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$199.99</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
         </div>
 
         <div class="divproducts calzado">
-            <div class="subdivproducts"><img src="tenis.png" class="fotos"></div>
-                <div class="subdivproducts1 ">Tenis
+            <div class="subdivproducts"><img src="img/tenis.png" class="fotos"></div>
+                <div class="subdivproducts1"><p class="nombres">Tenis</p>
                      <div class="preagre">
-                        <div class="precio"><p>$199.99</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$199.99</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
         </div>
 
         <div class="divproducts calzado">
-            <div class="subdivproducts"><img src="chanclas.png" class="fotos"></div>
-                <div class="subdivproducts1 ">Chanclas
+            <div class="subdivproducts"><img src="img/chanclas.png" class="fotos"></div>
+                <div class="subdivproducts1"><p class="nombres">Chanclas</p>
                      <div class="preagre">
-                        <div class="precio"><p>$199.99</p></div>
-                        <div class="agregar">Agregar</div>
+                        <div class="precio"><p id="objectprice">$199.99</p></div>
+                        <button class="agregar">Agregar</button>
                     </div>
                 </div>
             
         </div>
 
     </section>
-    
-    <h3>Agregar tu comentario:</h3>
-<div class="fb-comments" data-href="https://www.facebook.com/profile.php?id=100092403504802" data-width="100%" data-numposts="3"></div>
-
-
 
 
     <!-- <section class="finalproduct">
@@ -290,6 +297,7 @@
             <div class="subdivfinal1"></div>
         </div>
     </section> -->
+    <div class="fb-comments" data-href="https://facebook.com/profile.php?id=100092403504802" data-width="100%" data-numposts="5"></div>
 
 
     <section class="final" id="finalsec">
@@ -332,7 +340,6 @@
         </div>
     </section>
 
+   
   </body>
-  
 </html>
-
