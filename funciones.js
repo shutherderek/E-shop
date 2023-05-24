@@ -153,8 +153,6 @@ $(document).ready(function()
 		  $('#commentarioform')[0].reset();
 		});
 
-
-//titulo de categoria cambiante//
 	  	$(".productsbar").on("click",function()
 	{
 
@@ -170,29 +168,11 @@ $(document).ready(function()
 		$(".all").show()
 
 		$(".titulom").text("");
-	});	
+	});
 
-//Final de titulo cambiante//
 
-//inicio de funciones de registro//
 
-//inicio input cambiante password//
-$(".toggle-btn").click(function(){
-
-	var passwordInput = $("#password");
-
-	if (passwordInput.attr("type")=== "password" ) {
-		passwordInput.attr("type","text");	
-	} else {
-		passwordInput.attr("type","password");	
-	}
-});
-
-//Final input cambiante password//
-
-//inicio de cambio inicio/registro//
-
-$("#login-form-link").click(function(e) {
+	$("#login-form-link").click(function(e) {
 		$("#register-formm").animate({ opacity: "hide" }, "fast", function() {
 		  $("#login-formm").animate({ opacity: "show" }, "slow");
 		});
@@ -215,8 +195,86 @@ $("#login-form-link").click(function(e) {
 		  // Realizar acciones de registro aquí
 		  e.preventDefault();
 	  });
+	  
 
-//Final de cambio inicio/registro//
+
+
+
+
+	 
+		$('.panel-icon').click(function(e) {
+		  e.stopPropagation(); // Evita que se propague el evento de clic al hacer clic en el icono
+	  
+		  var panel = $(this).parent('.panel');
+		  panel.find('.panel-content').toggleClass('active');
+		});
+	  
+		$(document).click(function() {
+		  $('.panel-content').removeClass('active');
+		});
+	  
+		$('.panel').click(function(e) {
+		  e.stopPropagation(); // Evita que se cierre el panel al hacer clic dentro del panel
+		});
+
+		
+		
+			// var total = 0;
+			// var datosProductos = "";
+		  
+			// $(".divproducts").each(function() {
+			//   var nombreProducto = $(this).find(".subdivproducts1").text();
+			//   var precioTexto = $(this).find("#objectprice").text();
+			//   var precio = parseFloat(precioTexto.replace("$", ""));
+		  
+			//   if (!isNaN(precio)) {
+			// 	total += precio;
+			// 	datosProductos += "<p>" + nombreProducto + " - $" + precio.toFixed(2) + "</p>";
+			//   }
+			// });
+		  
+			// $(".totalprice").text("Total: $" + total.toFixed(2));
+			// $(".panel-content").html(datosProductos);
+		  
+		
+				var carrito = [];
+			  
+				$(".agregar").click(function() {
+				  var producto = $(this).closest(".divproducts");
+				  var nombre = producto.find(".nombres").text();
+				  var precioTexto = producto.find("#objectprice").text();
+				  var precio = parseFloat(precioTexto.replace("$", ""));
+			  
+				  if (!isNaN(precio)) {
+					carrito.push({ nombre: nombre, precio: precio });
+					actualizarCarrito();
+				  }
+				});
+			  
+				function actualizarCarrito() {
+				  var total = 0;
+				  var datosProductos = "";
+			  
+				  for (var i = 0; i < carrito.length; i++) {
+					var producto = carrito[i];
+					total += producto.precio;
+					datosProductos += "<p class='datosp'>" + producto.nombre + " - $" + producto.precio + "<button class='delete'>"+"X" +"</button>"+ "</p>";
+				  }
+			  
+				  $(".totalprice").text();
+				  $(".panel-content").html(datosProductos);
+				}	
+			  
+
+
+
+
+
+
+
+
 
 
 });
+
+
