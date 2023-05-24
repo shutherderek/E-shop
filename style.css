@@ -1,3 +1,4 @@
+
 html {
   scroll-behavior: smooth;
   font-family: 'Raleway', sans-serif;
@@ -281,7 +282,7 @@ i {
 }
 .divproducts:hover{
   transform: translateX(0px);
-  animation: animacion 3s ease-in-out ;
+  animation: animacion 3s ease-in-out infinite;
 }
 
 @keyframes animacion{
@@ -462,7 +463,7 @@ i {
 /*imagenes*/
 .fotos
 {
-  width: 190px;
+  width: 15vw;
   height: 99%;
 }
 
@@ -616,17 +617,61 @@ i {
   margin-left: 5px;
 }
 
-.ben
-{
-   position: absolute;
-  left: 500px;
-  
+.cajacontenedor{
+  height: 90% ;
+  width: 90%;
+  background: skyblue ;
+  margin: auto;
+}
+.registro{
+  display: flex;
+  margin: auto;
+  height: 700px ;
+  width: 1000px ;
+  background: pink;
+  align-items: center;
+  flex-direction: center;
 }
 
-/*Inicio de estilo de registro*/
 
 
-/*segundo registro*/
+/* Carrito */
+
+  .carritotitle {
+    text-align: center;
+  }
+
+  .secondtitleproduct {
+    text-align: center;
+  }
+
+  .secondmaincarrito {
+    margin: 20px;
+    border: 1px solid;
+  }
+
+  .productoscarrito {
+    margin: 20px;
+    border: 1px solid;
+    height: 1000px;
+    display: flex;
+    padding: 10px;
+  }
+
+  .cajacarrito {
+    border: 1px solid;
+    height: 100%;
+    width: 65%;
+  }
+
+  .totalcarrito {
+    border: 1px solid;
+    height: 100%;
+    width: 35%;
+  }
+
+/* Carrito */
+
 
 /*Inicio de sesión*/
 .loginopcs {
@@ -669,8 +714,79 @@ i {
   cursor: pointer;
 }
 
+
+
+
+/*Panel del carrito*/
+.panel {
+  position: relative;
+}
+
+.panel-content {
+  display: none;
+  position: absolute;
+  top: 30px; /* Ajusta según sea necesario */
+  right: 0px;
+  width:350px; /* Ajusta según sea necesario */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 5;
+}
+
+.panel-content.active {
+  display: block;
+}
+
+.totalprice {
+  color: black;
+}
+
+.delete {
+  padding: 4px;
+  width: 2vw;
+  height: 2vw;
+  border-radius: 50%;
+  background-color: #b1b1b1;
+  transition: 0.3s;
+  border: none;
+  margin: 5px;
+}
+
+.delete:hover {
+  background-color: #000000;
+  color: white;
+  transform: color 0.5s;
+}
+@media screen and (max-width: 1000px)  {
+  .productscontainer {
+    grid-template-columns: repeat(2,2fr);
+    
+    }
+
+  .ulproductsbar{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    height: 15vh;
+  }
+  .productsbar{
+    margin: 5px;
+  }
+
   
+}
+@media screen and (max-width: 750px)  {
+  .productscontainer {
+    grid-template-columns: repeat(1,1fr);
+    }
 
-
-/*Final de estilo registro*/
-
+    .ulproductsbar{
+      display: grid;
+      grid-template-columns: repeat(2,4fr);
+      height: 21vh;
+    }
+  .productsbar{
+    margin: 2px;
+  }
+  
+}
