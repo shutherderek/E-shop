@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,102 +11,73 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
     <script src="https://kit.fontawesome.com/d2875ec451.js" crossorigin="anonymous"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v16.0" nonce="fHC2c7ku"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v16.0"
+        nonce="fHC2c7ku"></script>
 
 
 
 
     <nav class="mainnavbar">
-      <h1 class="shoptitle"><span class="redtitle">E</span>-<span class="bluetitle">shop</span></h1>
-      <ul class="ulmainnavbar">
-        <li class="navbar"><a class="amainnavbar" href="#">Inicio</a></li>
-        <li class="navbar"><a class="amainnavbar" href="#cajaproductosa">Productos</a></li>
-        <li class="navbar"><a class="amainnavbar" href="#">Servicios</a></li>
-        <li class="navbar"><a class="amainnavbar" href="#finalsec">Contacto</a></li> 
-        <li class="navbar"><a class="amainnavbar" href="registro1.html">Iniciar sesion</a></li>
-      </ul>  
+       <a href="index.html" class="mainlogo"> <img src="logo.png"></a>
+        <ul class="ulmainnavbar">
+            
+                <li class="navbar"><a class="amainnavbar" href="#cajaproductosa">Productos</a></li>
+                <li class="navbar"><a class="amainnavbar" href="#finalsec">Contacto</a></li>
+                <li class="navbar"><a class="amainnavbar" href="#">Servicios</a></li>
+                <li class="navbar"><a class="amainnavbar" href="registro1.html">Iniciar sesion</a></li>
+                <li class="buttonsnavbar car">
+                    <div class="panel">
+                        <div class="panel-icon">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <!-- Reemplaza con el icono que desees utilizar -->
+                        </div>
+                        <div class="panel-content">
+                            <!-- Contenido del panel -->
+                            <div class="totalprice"></div>
+                        </div>
+                    </div>
+                </li>
+        </ul>
+        <div class="togglemenuicon">
+           <i class="fa-solid fa-bars"></i> 
+        </div>
     </nav>
-<br>
-    <nav class="secondmainnavbar">
-        <li class="buttonsnavbar"><i class="fa-regular fa-heart"></i></li>
-        <li class="buttonsnavbar car">
-            <div class="panel">
-                <div class="panel-icon">
-                    <i class="fa-solid fa-cart-shopping"></i> <!-- Reemplaza con el icono que desees utilizar -->
-                </div>
-                <div class="panel-content">
-                  <!-- Contenido del panel -->
-                  <div class="totalprice"></div>
-                </div>
-              </div></li>
-            <div class="logocar" id="numerocarrito">0</div>
-        </li> 
-    </nav> 
-      
+    <br>
+
+
 
     <section class="header">
         <div class="headercontainer">
             <div class="hcboxes">
-                <h1 class="titleheader">Consigue los mejores<br>
-                productos en tu hogar
+                <h1 class="titleheader">Consigue los mejores
+                    productos en tu hogar
                 </h1>
-                <input type="search" class="searchheader" placeholder="Busca tu producto favorito" list="lista">
-
-            </div>
-            
-
-            <datalist id="lista">
-                <option value="electronicos"></option>
-                <option value="cosmeticos"></option>
-                <option value="ropa"></option>
-                <option value="libros"></option>
-                <option value="accesorios"></option>
-                <option value="calzado"></option>
-            </datalist>
-
-            <div class="hcboxes1">
-                <img src="header.png" class="headerimg">
-            </div>
-
-
-            <div class="hcboxes2"> 
-               <a href="https://facebook.com" class="face"><i class="fab fa-facebook-square"></i></a>
-               <a href="https://instagram.com" class="insta"><i class="fab fa-instagram-square"></i></a>
-               <a href="https://twitter.com" class="twitter"><i class="fab fa-twitter-square"></i></a>
-                    <div class="divpr">
-                        <a href="#"><img src="header2.png" class="pruebaimg"></a>
-                    </div>
+               
             </div>
         </div>
     </section>
 
-    <nav class="productsnavbar"> 
+    <nav class="productsnavbar">
         <ul class="ulproductsbar">
-            <div class="productsbar electro">Electrónicos</div>
+            <li class="productsbar electro">Electrónicos</li>
             <li class="productsbar cos">Cosméticos </li>
             <li class="productsbar rop">Ropa</li>
             <li class="productsbar lib">Libros</li>
             <li class="productsbar acc">Accesorios</li>
             <li class="productsbar cal">Calzado</li>
             <li class="productsbar2 all"><span class="producttitle">Ver todo</span></li>
-        
-     
-             <div class="subproductsbar">
-                 <li class="icoproductsbar">←</li>
-                 <li class="icoproductsbar">→</li> 
-            </div>
         </ul>
     </nav>
 
     <section class="productscontainer" id="cajaproductosa">
         <div class="divproducts electronicos">
-            <div class="subdivproducts"><img class="fotos" src="s.png"></div>
+            <div class="subdivproducts"><img class="fotos" src="img/s.png"></div>
                 <div class="subdivproducts1 "><p class="nombres">Switch</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$9999.00</p></div>
@@ -115,7 +87,7 @@
         </div>
 
         <div class="divproducts electronicos">
-            <div class="subdivproducts"><img class="fotos" src="g.jpg"></div>
+            <div class="subdivproducts"><img class="fotos" src="img/g.jpg"></div>
                 <div class="subdivproducts1"><p class="nombres">Galaxy</p>
                     <div class="preagre">
                         <div class="precio"><p id="objectprice">$7999.00</p></div>
@@ -125,7 +97,7 @@
         </div>
 
         <div class="divproducts electronicos">
-            <div class="subdivproducts"> <img class="fotos" src="j.jpg"></div>
+            <div class="subdivproducts"> <img class="fotos" src="img/j.jpg"></div>
                 <div class="subdivproducts1"><p class="nombres">Jetta</p>
                  <div class="preagre">
                         <div class="precio"><p id="objectprice">$100000</p></div>
@@ -135,7 +107,7 @@
         </div>
 
         <div class="divproducts cosmeticos">
-            <div class="subdivproducts"><img src="maquillaje.png" class="fotos"></div>
+            <div class="subdivproducts"><img src="img/maquillaje.png" class="fotos"></div>
                 <div class="subdivproducts1"><p class="nombres">Maquillaje</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$199.99</p></div>
@@ -145,7 +117,7 @@
         </div>
 
         <div class="divproducts cosmeticos">
-            <div class="subdivproducts"><img src="labial.png" class="fotos"></div>
+            <div class="subdivproducts"><img src="img/labial.png" class="fotos"></div>
                 <div class="subdivproducts1"><p class="nombres">Labial</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$199.99</p></div>
@@ -155,7 +127,7 @@
         </div>
 
         <div class="divproducts cosmeticos">
-            <div class="subdivproducts"><img src="shampo.png" class="fotos"></div>
+            <div class="subdivproducts"><img src="img/shampo.png" class="fotos"></div>
                 <div class="subdivproducts1"><p class="nombres">Shampo</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$199.99</p></div>
@@ -165,7 +137,7 @@
         </div>
 
         <div class="divproducts ropa">
-            <div class="subdivproducts"><img src="playeras.png" class="fotos"></div>
+            <div class="subdivproducts"><img src="img/playeras.png" class="fotos"></div>
                 <div class="subdivproducts1"><p class="nombres"> Playera</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$199.99</p></div>
@@ -175,7 +147,7 @@
         </div>
 
         <div class="divproducts ropa">
-            <div class="subdivproducts"><img src="sueters.png" class="fotos"></div>
+            <div class="subdivproducts"><img src="img/sueters.png" class="fotos"></div>
                 <div class="subdivproducts1"><p class="nombres"> Sueters</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$199.99</p></div>
@@ -185,7 +157,7 @@
         </div>
 
         <div class="divproducts ropa">
-            <div class="subdivproducts"><img src="pantalones.png" class="fotos"></div>
+            <div class="subdivproducts"><img src="img/pantalones.png" class="fotos"></div>
                 <div class="subdivproducts1"><p class="nombres">Pantalones</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$199.99</p></div>
@@ -196,7 +168,7 @@
         </div>
 
         <div class="divproducts libros">
-            <div class="subdivproducts"><img src="entretenimiento.jpg" class="fotos"></div>
+            <div class="subdivproducts"><img src="img/entretenimiento.jpg" class="fotos"></div>
                 <div class="subdivproducts1"><p class="nombres">Entretenimiento</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$199.99</p></div>
@@ -206,7 +178,7 @@
         </div>
 
         <div class="divproducts libros">
-            <div class="subdivproducts"><img src="comedia.png" class="fotos"></div>
+            <div class="subdivproducts"><img src="img/comedia.png" class="fotos"></div>
                 <div class="subdivproducts1"><p class="nombres">Comedia</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$199.99</p></div>
@@ -216,7 +188,7 @@
         </div>
 
         <div class="divproducts libros">
-            <div class="subdivproducts"><img src="accion.jpg" class="fotos"></div>
+            <div class="subdivproducts"><img src="img/accion.jpg" class="fotos"></div>
                 <div class="subdivproducts1"><p class="nombres">Accion</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$199.99</p></div>
@@ -227,7 +199,7 @@
         </div>
 
         <div class="divproducts accesorios">
-            <div class="subdivproducts"><img src="collar.png" class="fotos"></div>
+            <div class="subdivproducts"><img src="img/collar.png" class="fotos"></div>
                 <div class="subdivproducts1"><p class="nombres">Collar</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$199.99</p></div>
@@ -237,7 +209,7 @@
         </div>
 
         <div class="divproducts accesorios">
-            <div class="subdivproducts"><img src="aretes.png" class="fotos"></div>
+            <div class="subdivproducts"><img src="img/aretes.png" class="fotos"></div>
                 <div class="subdivproducts1"><p class="nombres">Aretes</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$199.99</p></div>
@@ -247,7 +219,7 @@
         </div>
 
         <div class="divproducts accesorios">
-            <div class="subdivproducts"><img src="anillos.png" class="fotos"></div>
+            <div class="subdivproducts"><img src="img/anillos.png" class="fotos"></div>
                 <div class="subdivproducts1"><p class="nombres">Anillos</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$199.99</p></div>
@@ -258,7 +230,7 @@
         </div>
 
         <div class="divproducts calzado">
-            <div class="subdivproducts"><img src="zapatos.png" class="fotos"></div>
+            <div class="subdivproducts"><img src="img/zapatos.png" class="fotos"></div>
                 <div class="subdivproducts1"><p class="nombres">Zapatos</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$199.99</p></div>
@@ -268,7 +240,7 @@
         </div>
 
         <div class="divproducts calzado">
-            <div class="subdivproducts"><img src="tenis.png" class="fotos"></div>
+            <div class="subdivproducts"><img src="img/tenis.png" class="fotos"></div>
                 <div class="subdivproducts1"><p class="nombres">Tenis</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$199.99</p></div>
@@ -278,7 +250,7 @@
         </div>
 
         <div class="divproducts calzado">
-            <div class="subdivproducts"><img src="chanclas.png" class="fotos"></div>
+            <div class="subdivproducts"><img src="img/chanclas.png" class="fotos"></div>
                 <div class="subdivproducts1"><p class="nombres">Chanclas</p>
                      <div class="preagre">
                         <div class="precio"><p id="objectprice">$199.99</p></div>
@@ -297,7 +269,6 @@
             <div class="subdivfinal1"></div>
         </div>
     </section> -->
-    <div class="fb-comments" data-href="https://facebook.com/profile.php?id=100092403504802" data-width="100%" data-numposts="5"></div>
 
 
     <section class="final" id="finalsec">
@@ -308,38 +279,64 @@
                 <a href="https://instagram.com" class="insta1"><i class="fab fa-instagram-square" id="finalico"></i></a>
                 <a href="https://twitter.com" class="twitter1"><i class="fab fa-twitter-square" id="finalico"></i></a>
             </div> <br>
-            <p class="finalcredits"> <a href="comentarios.html">¡Comparte tu opinión!</a> <br> Diseñado por: Luis Pérez</p>
+            <p class="finalcredits"> <a href="comentarios.html">¡Comparte tu opinión!</a> <br> Diseñado por: <br> -Luis Angel Pérez Aguilera <br> <br>-Jorge Eduardo Velasco Montejo <br> <br> -Derek Alejandro Ortiz Tovilla
+            </p>
         </div>
         <div class="finaldivs1">
             <ul class="finalul1">
-                 <li class="finalp1">Shop</li>
-                     <a href="#" id="finallinks"><li class="finalp">Sobre nosotros</li></a>
-                     <a href="#" id="finallinks"><li class="finalp">Contacto</li></a>
-                     <a href="#" id="finallinks"><li class="finalp">Ubicación</li></a>
-                     <a href="#" id="finallinks"><li class="finalp">FAQ</li></a> 
+                <li class="finalp1">Shop</li>
+                <a href="#" id="finallinks">
+                    <li class="finalp">Sobre nosotros</li>
+                </a>
+                <a href="#" id="finallinks">
+                    <li class="finalp">Contacto</li>
+                </a>
+                <a href="#" id="finallinks">
+                    <li class="finalp">Ubicación</li>
+                </a>
+                <a href="#" id="finallinks">
+                    <li class="finalp">FAQ</li>
+                </a>
             </ul>
         </div>
 
         <div class="finaldivs2">
             <ul class="finalul2">
                 <li class="finalp1">Links</li>
-                    <a href="#" id="finallinks"><li class="finalp">Electronicos</li></a>
-                    <a href="#" id="finallinks"><li class="finalp">Verano</li></a>
-                    <a href="#" id="finallinks"><li class="finalp">Libros</li></a>
-                    <a href="#" id="finallinks"><li class="finalp">Cosméticos</li></a>   
+                <a href="#" id="finallinks">
+                    <li class="finalp">Electronicos</li>
+                </a>
+                <a href="#" id="finallinks">
+                    <li class="finalp">Verano</li>
+                </a>
+                <a href="#" id="finallinks">
+                    <li class="finalp">Libros</li>
+                </a>
+                <a href="#" id="finallinks">
+                    <li class="finalp">Cosméticos</li>
+                </a>
             </ul>
         </div>
 
         <div class="finaldivs3">
             <ul class="finalul3">
                 <li class="finalp1">Contacto</li>
-                    <a href="#" id="finallinks"><li class="finalp">+52 961 453 3787</li></a>
-                    <a href="#" id="finallinks"><li class="finalp">eshop@gmail.com</li></a>
-                    <a href="#" id="finallinks"><li class="finalp">123. Lan, London, UK</li></a>
+                <a href="#" id="finallinks">
+                    <li class="finalp">+52 961 453 3787</li>
+                </a>
+                <a href="#" id="finallinks">
+                    <li class="finalp">eshop@gmail.com</li>
+                </a>
+                <a href="#" id="finallinks">
+                    <li class="finalp">29067, Tuxtla Gutiérrez, Chiapas</li>
+                </a>
             </ul>
         </div>
     </section>
 
-   
-  </body>
+
+    <div class="fb-comments" data-href="https://facebook.com/profile.php?id=100092403504802" data-width="700"
+        data-numposts="5"></div>
+</body>
+
 </html>
