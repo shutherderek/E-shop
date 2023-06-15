@@ -270,6 +270,13 @@ $(document).ready(function()
 
 
 
+				$('.togglemenuicon').click(function() {
+					$('.ulmainnavbar').toggleClass('nav-active');
+				  });
+
+
+
+
 
 
 
